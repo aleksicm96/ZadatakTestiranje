@@ -1,0 +1,17 @@
+import java.sql.DriverManager;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Testiranje {
+
+	public static void main(String[] args) {
+	
+		System.setProperty("webdriver.chrome.driver", "/home/milos/Desktop/chromedriver");
+		WebDriver driver = new ChromeDriver();
+		String URL = "http://automationpratice.com/index.php";
+		driver.get(URL);
+		driver.manage().window().maximize();
+	}
+
+}
